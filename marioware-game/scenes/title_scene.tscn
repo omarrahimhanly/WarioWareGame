@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://by3576xcl76yy"]
+
+[ext_resource type="Texture2D" uid="uid://bnfm02yvqbkbv" path="res://Gemini_Generated_Image_5qpjxn5qpjxn5qlpj.png" id="1_6jsh8"]
+
+[node name="titlescreen" type="Node2D" unique_id=1291658560]
+
+[node name="background" type="TextureRect" parent="." unique_id=900950247]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 1153.0
+offset_bottom = 647.0
+texture = ExtResource("1_6jsh8")
+
+[node name="title" type="RichTextLabel" parent="." unique_id=496445620]
+offset_left = 292.0
+offset_top = 99.0
+offset_right = 898.0
+offset_bottom = 255.0
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 108
+text = "MarioSnot!
+"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1203455349]
+offset_left = 492.0
+offset_top = 243.0
+offset_right = 641.0
+offset_bottom = 529.0
+
+[node name="start" type="Button" parent="VBoxContainer" unique_id=819730529]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Start Game"
+
+[node name="settings" type="Button" parent="VBoxContainer" unique_id=338821577]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Settings"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1867060047]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Quit
+"

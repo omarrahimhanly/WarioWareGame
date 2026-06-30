@@ -1,3 +1,64 @@
 [gd_scene format=3 uid="uid://dtk7vbedxvscn"]
 
+[ext_resource type="Script" uid="uid://d4b168wjg65t8" path="res://scenes/timer_screen.gd" id="1_a74lg"]
+[ext_resource type="Texture2D" uid="uid://bnfm02yvqbkbv" path="res://Gemini_Generated_Image_5qpjxn5qpjxn5qlpj.png" id="1_bl4ss"]
+[ext_resource type="Texture2D" uid="uid://bdnfv0hpklt5s" path="res://garlic.png" id="2_a74lg"]
+
 [node name="level_scene" type="Node2D" unique_id=859422852]
+script = ExtResource("1_a74lg")
+
+[node name="BackGround" type="TextureRect" parent="." unique_id=2046783612]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_bl4ss")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BackGround" unique_id=92776265]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 105.0
+offset_right = 955.0
+offset_bottom = 261.0
+
+[node name="TextureRect" type="TextureRect" parent="BackGround/HBoxContainer" unique_id=1205942090]
+layout_mode = 2
+texture = ExtResource("2_a74lg")
+expand_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="BackGround/HBoxContainer" unique_id=763232550]
+layout_mode = 2
+texture = ExtResource("2_a74lg")
+expand_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="BackGround/HBoxContainer" unique_id=340350852]
+layout_mode = 2
+texture = ExtResource("2_a74lg")
+expand_mode = 2
+
+[node name="TextureRect4" type="TextureRect" parent="BackGround/HBoxContainer" unique_id=922674163]
+layout_mode = 2
+texture = ExtResource("2_a74lg")
+expand_mode = 2
+
+[node name="TextureRect5" type="TextureRect" parent="BackGround/HBoxContainer" unique_id=285647126]
+layout_mode = 2
+texture = ExtResource("2_a74lg")
+expand_mode = 2
+
+[node name="level" type="RichTextLabel" parent="." unique_id=171450091]
+offset_left = 499.0
+offset_top = 274.0
+offset_right = 674.0
+offset_bottom = 342.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "Level #"
+
+[node name="timer" type="RichTextLabel" parent="." unique_id=971412647]
+offset_left = 532.0
+offset_top = 371.0
+offset_right = 627.0
+offset_bottom = 436.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0
+"

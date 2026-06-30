@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cipcpsn2ofun6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dyypk"]
+
+[node name="Player" type="CharacterBody2D" unique_id=1132092685]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1061043571]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=517677615]
+shape = SubResource("CircleShape2D_dyypk")

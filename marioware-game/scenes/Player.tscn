@@ -1,10 +1,26 @@
 [gd_scene format=3 uid="uid://cipcpsn2ofun6"]
 
+[ext_resource type="Script" uid="uid://dlm3ml5gyffkp" path="res://scenes/player.gd" id="1_v6fml"]
+[ext_resource type="Texture2D" uid="uid://ce16o5ii5du2c" path="res://Gemini_Generated_Image_x0ylb2x0ylb2x0yl-removebg-preview.png" id="2_3li8b"]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_dyypk"]
+radius = 61.008198
 
 [node name="Player" type="CharacterBody2D" unique_id=1132092685]
+position = Vector2(-46, -114)
+script = ExtResource("1_v6fml")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1061043571]
+position = Vector2(410.00003, 636)
+scale = Vector2(0.28363228, 0.31434315)
+texture = ExtResource("2_3li8b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=517677615]
+position = Vector2(413, 645)
+shape = SubResource("CircleShape2D_dyypk")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1409494509]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=225626059]
+position = Vector2(413, 645)
 shape = SubResource("CircleShape2D_dyypk")

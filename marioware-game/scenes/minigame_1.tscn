@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://boopd3lnretf2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dyypk"]
+size = Vector2(177.7399, 61.121964)
+
+[node name="Minigame1" type="Node2D" unique_id=1569892618]
+
+[node name="Background" type="ColorRect" parent="." unique_id=865358776]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.84971, 16.090492)
+color = Color(0.5965831, 0.0021918744, 0.8226325, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Background" unique_id=1985280165]
+position = Vector2(0.5199359, 2.361643)
+scale = Vector2(0.032086644, 0.07334601)
+
+[node name="ColorRect" type="ColorRect" parent="Background/StaticBody2D" unique_id=548085300]
+offset_left = 667.0
+offset_top = 472.0
+offset_right = 925.0
+offset_bottom = 512.0
+color = Color(0.5176471, 1, 0.972549, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/StaticBody2D" unique_id=1096698520]
+position = Vector2(795.99994, 492)
+scale = Vector2(1.449446, -0.6544288)
+shape = SubResource("RectangleShape2D_dyypk")
